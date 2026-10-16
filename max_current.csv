@@ -1,0 +1,2 @@
+Expression ,Value,Expression ,Value,Expression ,Value
+ymax(i("/clock/PLUS" ?result "tran")),375.0E-3,ymax(i("/vdd/PLUS" ?result "tran")),121.2E-3,ymax(i("/bias/PLUS" ?result "tran")),3.958E-3
