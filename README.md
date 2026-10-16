@@ -2,9 +2,6 @@
 
 An **8-bit pipeline analog-to-digital converter** with a **1.5-bit-per-stage** architecture and digital error correction, designed at the transistor level in Cadence (600 nm CMOS, 5 V supply).
 
-Final project for **ESE 6680 – Mixed Signal Circuit Design and Modeling**, University of Pennsylvania, Spring 2025 (Dr. Tania Khanna).
-Team: **Kai Segimoto**, **Isaac Klein**
-
 **[Read the full report →](REPORT.md)**
 
 ## Architecture
@@ -34,9 +31,3 @@ All results are at a 2 MHz sampling clock.
 | FoM = P / (f<sub>s</sub> · 2<sup>ENOB</sup>) | 1.10 × 10⁻⁸ |
 
 The DNL/INL ramp test and the FFT-based SNDR/SFDR analysis were done in MATLAB. The scripts are in the [report appendix](REPORT.md#appendix-matlab-analysis-code).
-
-## Files
-
-- [`REPORT.md`](REPORT.md): the full design report, readable on GitHub. It covers block schematics, design reasoning, simulations, power, linearity and spectral results, and the MATLAB code. Figures are in `report_images/`.
-- `ESE 6680 Pipeline ADC.docx`: the original Word report
-- `max_current.csv`, `max_current.xlsx`: peak clock, VDD and bias supply currents from the Cadence transient simulation, used for the power estimate
