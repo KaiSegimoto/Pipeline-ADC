@@ -5,6 +5,8 @@ An **8-bit pipeline analog-to-digital converter** with a **1.5-bit-per-stage** a
 Final project for **ESE 6680 – Mixed Signal Circuit Design and Modeling**, University of Pennsylvania, Spring 2025 (Dr. Tania Khanna).
 Team: **Kai Segimoto**, **Isaac Klein**
 
+**[Read the full report →](REPORT.md)**
+
 ## Architecture
 
 Each 1.5-bit stage resolves one bit plus half a bit of redundancy and passes an amplified residue to the next stage.
@@ -31,11 +33,10 @@ All results are at a 2 MHz sampling clock.
 | Power (worst case, from peak supply currents) | 2.49 W |
 | FoM = P / (f<sub>s</sub> · 2<sup>ENOB</sup>) | 1.10 × 10⁻⁸ |
 
-The DNL/INL ramp test and the FFT-based SNDR/SFDR analysis were done in MATLAB. The scripts are in the report appendix.
+The DNL/INL ramp test and the FFT-based SNDR/SFDR analysis were done in MATLAB. The scripts are in the [report appendix](REPORT.md#appendix-matlab-analysis-code).
 
 ## Files
 
-- `ESE 6680 Pipeline ADC.docx`: full design report with block schematics, design reasoning, simulations, power, linearity and spectral results, and MATLAB code
+- [`REPORT.md`](REPORT.md): the full design report, readable on GitHub. It covers block schematics, design reasoning, simulations, power, linearity and spectral results, and the MATLAB code. Figures are in `report_images/`.
+- `ESE 6680 Pipeline ADC.docx`: the original Word report
 - `max_current.csv`, `max_current.xlsx`: peak clock, VDD and bias supply currents from the Cadence transient simulation, used for the power estimate
-
-Download the report to view it, since GitHub does not render `.docx` files.
